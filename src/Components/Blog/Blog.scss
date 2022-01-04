@@ -1,0 +1,64 @@
+@import "../../Styles/variables";
+
+.blog-section {
+  padding: 6rem 0px;
+  background-image: url("../Images/portfolio-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.slick-prev,
+.slick-next {
+  background: #000 !important;
+  margin-top: -5rem;
+  height: 2rem !important;
+  width: 2rem !important;
+  border-radius: 50%;
+}
+.slick-dots li button::before {
+  margin-top: 1rem;
+  content: "-" !important;
+  font-size: 3rem;
+  display: none;
+}
+.slick-prev::before,
+.slick-next::before {
+  color: rgb(231, 45, 45) !important;
+}
+
+.blogg {
+  display: flex;
+  flex-direction: column;
+}
+.blog-img {
+  margin-bottom: 2rem;
+}
+.foot-slide {
+  height: 300px;
+  width: 70%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.blog-textpart {
+  text-align: center;
+}
+.profession {
+  color: $primary-color;
+}
+.blog-links {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #0004ff;
+}
+.description {
+}
+.blog-left-align {
+}
+.blog-first-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
